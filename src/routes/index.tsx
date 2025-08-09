@@ -1,5 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router";
-import { Home, Login } from "../pages";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home, Login, Products } from "../pages";
 
 export function AppRoutes() {
   return (
@@ -7,6 +7,7 @@ export function AppRoutes() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/products" element={<Products />} />
       </Routes>
     </BrowserRouter>
   );
